@@ -1,0 +1,39 @@
+@model GenshinDB.Models.Artifact
+
+@{
+    ViewData["Title"] = @Html.DisplayFor(model => model.Name);
+}
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Name)</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rarity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rarity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SetEffect2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SetEffect2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SetEffect4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SetEffect4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FullDescription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FullDescription)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
